@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+     File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="loading_cancleable">true</string>
+    <string name="id_defaultitemimagesel">com.mdx.framework.widget.selectphotos.item.DefaultItemImageSel</string>
+
+    <declare-styleable name="GifTextureView">
+        <attr name="gifSource" format="reference|string" />
+        <attr name="isOpaque" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="GifView">
+        <attr name="freezesAnimation" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Mimage">
+        <attr name="toColor" format="color" />
+        <attr name="clickColor" format="color" />
+        <attr name="clickFlag" format="integer" />
+        <attr name="round" format="integer" />
+        <attr name="blur" format="integer" />
+        <attr name="iscircle" format="boolean" />
+        <attr name="checked" format="boolean" />
+        <attr name="defaultdrawable" format="reference" />
+        <attr name="canScale" format="boolean" />
+        <attr name="obj" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MFRecyclerView">
+        <attr name="api" format="string" />
+        <attr name="dataformat" format="string" />
+        <attr name="itemres" format="reference" />
+        <attr name="column" format="integer" />
+        <attr name="morientation">
+            <enum name="HORIZONTAL" value="0" />
+            <enum name="VERTICAL" value="1" />
+        </attr>
+        <attr name="swipListener" format="string" />
+        <attr name="layoutparams">
+            <enum name="GRID" value="0" />
+            <enum name="LINEAR" value="1" />
+            <enum name="STAGGERED" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="FitLayout">
+        <attr name="loadApi" format="string" />
+        <attr name="saveApi" format="string" />
+        <attr name="updateApi" format="string" />
+    </declare-styleable>
+
+</resources>
+

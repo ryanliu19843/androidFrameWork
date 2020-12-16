@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mdx.framework"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="29" />
+
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission
+        android:name="android.permission.MANAGE_DOCUMENTS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidframework"
+        android:supportsRtl="true"
+        tools:replace="android:appComponentFactory" >
+
+        <!-- **************************************框架act 注册开始************************************************* -->
+
+        <activity
+            android:name="com.mdx.framework.activity.LoadingAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/actNNS"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.mdx.framework.activity.IndexAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/act"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.mdx.framework.activity.TitleAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparentact"
+            tools:ignore="LockedOrientationActivity" />
+        <!--  -->
+        <activity
+            android:name="com.mdx.framework.activity.TitleTransparentAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparentact"
+            tools:ignore="LockedOrientationActivity" >
+        </activity>
+        <activity
+            android:name="com.mdx.framework.activity.NoTitleAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparentact"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.mdx.framework.activity.TitleTransStatusAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparentactNS"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.mdx.framework.activity.PTitleAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparentact"
+            tools:ignore="LockedOrientationActivity" >
+        </activity>
+        <activity
+            android:name="com.mdx.framework.activity.taskactivity.ActRestart"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Dialog"
+            tools:ignore="LockedOrientationActivity" >
+        </activity>
+        <activity
+            android:name="com.mdx.framework.activity.taskactivity.UpdateSelfAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Dialog"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--  -->
+        <activity
+            android:name="com.mdx.framework.activity.PTitleTransparentAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:noHistory="false"
+            android:process=":com.mdx.framework.process"
+            android:screenOrientation="unspecified"
+            android:theme="@style/transparentact"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" >
+            <intent-filter>
+                <action android:name="com.mdx.framework.process" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mdx.framework.activity.PNoTitleAct"
+            android:process=":com.mdx.framework.process"
+            android:theme="@style/transparentact"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            tools:ignore="LockedOrientationActivity" >
+            <intent-filter>
+                <action android:name="com.mdx.framework.process" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mdx.framework.activity.PTitleTransStatusAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":com.mdx.framework.process"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparentactNS"
+            tools:ignore="LockedOrientationActivity" >
+            <intent-filter>
+                <action android:name="com.mdx.framework.process" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mdx.framework.widget.getphoto.ActCameraStream"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":com.mdx.framework.process"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparentact"
+            tools:ignore="LockedOrientationActivity" >
+            <intent-filter>
+                <action android:name="com.mdx.framework.process" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mdx.framework.activity.CameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:process=":com.mdx.framework.process"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparentact"
+            tools:ignore="LockedOrientationActivity" >
+            <intent-filter>
+                <action android:name="com.mdx.framework.process" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.mdx.framework.server.LogUpdateService"
+            android:exported="false"
+            android:process=":com.mdx.framework.process" >
+            <intent-filter>
+                <action android:name="com.mdx.framework.process" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <!-- 读取二维码 -->
+        <activity
+            android:name="com.mdx.framework.activity.DecodeCodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/transparentact"
+            tools:ignore="LockedOrientationActivity" />
+
+        <receiver android:name="com.mdx.framework.utility.commons.UpdataBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <!-- **************************************框架act 注册结束 ************************************************* -->
+    </application>
+
+</manifest>

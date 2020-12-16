@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+     <string name="id_text">com.example.autotest.item.Text</string>
+     <string name="id_itemtext">com.example.autotest.item.ItemText</string>
+     <string name="id_image">com.example.autotest.item.Image</string>
+     <string name="id_comrn">com.example.autotest.item.Comrn</string>
+     <string name="id_simple">com.example.autotest.item.Simple</string>
+     <string name="id_itemimagesel">com.example.autotest.item.ItemImageSel</string>
+     <string name="id_group">com.example.autotest.item.Group</string>
+     <string name="id_banner">com.example.autotest.item.Banner</string>
+</resources>
+

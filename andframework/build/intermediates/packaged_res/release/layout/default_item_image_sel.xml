@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panel_content"
+    android:layout_width="@dimen/j80dp"
+    android:layout_height="@dimen/j80dp"
+    android:paddingLeft="1px"
+    android:paddingTop="1px">
+
+    <com.mdx.framework.widget.MImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/j80dp"
+        android:layout_height="@dimen/j80dp"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_df_img_load" />
+
+    <View
+        android:id="@+id/maxview"
+        android:layout_width="@dimen/j80dp"
+        android:layout_height="@dimen/j80dp"
+        android:background="#22000000"
+        android:visibility="gone"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="@dimen/j80dp"
+        android:layout_height="@dimen/j80dp"
+        android:background="#22000000"
+        android:gravity="center" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="@dimen/j30dp"
+        android:layout_height="@dimen/j30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/default_photo_sel"
+        android:button="@null"
+        android:gravity="center" />
+</RelativeLayout>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+     <data>
+          <variable name="item" type="com.mdx.framework.server.api.base.Msg_Key" />
+          <variable name="clickListener" type="android.view.View.OnClickListener" />
+     </data>
+     <LinearLayout android:id="@+id/contentView" android:layout_width="match_parent" android:layout_height="@dimen/j50dp" android:background="#f2f2f2" android:orientation="vertical">
+          <TextView android:layout_width="match_parent" android:layout_height="@dimen/j50dp" android:layout_marginLeft="@dimen/j5dp" android:layout_marginRight="@dimen/j5dp" android:layout_marginTop="@dimen/j5dp" android:layout_marginBottom="0dip" android:layout_weight="1" android:gravity="center" android:text="@{item.code}" android:textColor="@color/B" android:textSize="15dip" />
+     </LinearLayout>
+</layout>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+     <string name="undo">取消</string>
+     <string name="undoall">取消所有</string>
+</resources>
+

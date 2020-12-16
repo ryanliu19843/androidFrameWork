@@ -1,0 +1,353 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:1:1-212:12
+INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:1:1-212:12
+INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:1:1-212:12
+INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:1:1-212:12
+INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:1:1-212:12
+INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:1:1-212:12
+INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:1:1-212:12
+	package
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+		INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:1:1-212:12
+		INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:2:5-51
+	android:versionCode
+		INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:1:1-212:12
+		INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:13:5-76
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:13:22-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:15:5-75
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:15:22-72
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:17:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:18:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:21:5-81
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:21:22-78
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:22:5-24:47
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:23:9-57
+uses-permission#android.permission.VIBRATE
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:25:5-66
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:25:22-63
+uses-permission#android.permission.ACCESS_DOWNLOAD_MANAGER
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:26:22-79
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:27:22-85
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:28:5-75
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:28:22-72
+uses-permission#android.permission.MANAGE_DOCUMENTS
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:29:5-31:47
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:31:9-44
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:30:9-59
+uses-permission#android.permission.CAMERA
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:32:5-65
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:32:22-62
+uses-permission#android.permission.SEND_SMS
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:33:5-67
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:33:22-64
+uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:34:5-84
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:34:22-81
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:35:5-76
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:35:22-73
+application
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:38:5-210:19
+	android:supportsRtl
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:41:9-35
+	android:appComponentFactory
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:40:9-55
+	android:allowBackup
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:39:9-35
+	tools:replace
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:42:9-52
+activity#com.mdx.framework.activity.LoadingAct
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:45:9-50:65
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:48:13-49
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:50:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:47:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:49:13-42
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:46:13-65
+activity#com.mdx.framework.activity.IndexAct
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:52:9-58:65
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:55:13-49
+	android:windowSoftInputMode
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:57:13-52
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:58:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:54:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:56:13-39
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:53:13-63
+activity#com.mdx.framework.activity.TitleAct
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:60:9-65:65
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:63:13-49
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:65:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:62:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:64:13-50
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:61:13-63
+activity#com.mdx.framework.activity.TitleTransparentAct
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:67:9-74:20
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:70:13-49
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:72:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:69:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:71:13-50
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:68:13-74
+activity#com.mdx.framework.activity.NoTitleAct
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:75:9-80:65
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:77:13-49
+	android:windowSoftInputMode
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:79:13-67
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:80:13-53
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:78:13-50
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:76:13-65
+activity#com.mdx.framework.activity.TitleTransStatusAct
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:82:9-87:65
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:85:13-49
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:87:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:84:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:86:13-52
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:83:13-74
+activity#com.mdx.framework.activity.PTitleAct
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:88:9-95:20
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:91:13-49
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:93:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:90:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:92:13-50
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:89:13-64
+activity#com.mdx.framework.activity.taskactivity.ActRestart
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:97:9-105:20
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:101:13-49
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:103:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:100:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:102:13-42
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:99:13-78
+activity#com.mdx.framework.activity.taskactivity.UpdateSelfAct
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:107:9-112:65
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:110:13-49
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:112:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:109:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:111:13-42
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:108:13-81
+activity#com.mdx.framework.activity.PTitleTransparentAct
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:115:9-130:20
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:121:13-52
+	android:process
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:120:13-57
+	android:excludeFromRecents
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:118:13-46
+	android:windowSoftInputMode
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:123:13-55
+	android:noHistory
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:119:13-38
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:124:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:117:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:122:13-50
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:116:13-75
+intent-filter#action:name:com.mdx.framework.process+category:name:android.intent.category.DEFAULT
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:125:13-129:29
+action#com.mdx.framework.process
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:17-68
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:25-65
+category#android.intent.category.DEFAULT
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:17-76
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:27-73
+activity#com.mdx.framework.activity.PNoTitleAct
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:131:9-142:20
+	android:process
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:133:13-57
+	android:windowSoftInputMode
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:135:13-64
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:136:13-53
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:134:13-50
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:132:13-66
+activity#com.mdx.framework.activity.PTitleTransStatusAct
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:143:9-155:20
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:147:13-49
+	android:process
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:146:13-57
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:149:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:145:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:148:13-52
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:144:13-75
+activity#com.mdx.framework.widget.getphoto.ActCameraStream
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:156:9-168:20
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:160:13-49
+	android:process
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:159:13-57
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:162:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:158:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:161:13-50
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:157:13-77
+activity#com.mdx.framework.activity.CameraActivity
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:170:9-183:20
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:175:13-49
+	android:process
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:174:13-57
+	android:excludeFromRecents
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:173:13-46
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:177:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:172:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:176:13-50
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:171:13-69
+service#com.mdx.framework.server.LogUpdateService
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:185:9-194:19
+	android:process
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:188:13-57
+	android:exported
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:187:13-37
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:186:13-69
+activity#com.mdx.framework.activity.DecodeCodeActivity
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:196:9-202:65
+	android:screenOrientation
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:200:13-49
+	android:excludeFromRecents
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:199:13-46
+	tools:ignore
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:202:13-53
+	android:configChanges
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:198:13-74
+	android:theme
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:201:13-50
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:197:13-73
+receiver#com.mdx.framework.utility.commons.UpdataBroadcastReceiver
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:204:9-208:20
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:204:19-91
+intent-filter#action:name:android.intent.action.DOWNLOAD_COMPLETE
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:205:13-207:29
+action#android.intent.action.DOWNLOAD_COMPLETE
+ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:206:17-82
+	android:name
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:206:25-79
+uses-sdk
+INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+		INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+		ADDED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+		INJECTED from F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+     <data>
+          <variable name="F" type="com.mdx.framework.autofit.AutoFit" />
+          <variable name="P" type="java.util.HashMap" />
+     </data>
+     <com.mdx.framework.autofit.layout.FitRelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:background="@drawable/bg_cell">
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.5dip" android:gravity="center">
+               <com.mdx.framework.widget.MImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/ic_touxang" />
+               <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="李先生" android:textColor="#262626" android:textSize="15.0sp" />
+          </LinearLayout>
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_marginRight="10.0dip" android:layout_marginTop="17.5dip" android:text="紫荆包间" android:textColor="#4074EC" android:textSize="15.0sp" />
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="29.5dip" android:gravity="center">
+               <com.mdx.framework.widget.MImageView android:layout_width="10.0dip" android:layout_height="11.5dip" android:src="@drawable/ic_phone" />
+               <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="180989898989" android:textColor="#666666" android:textSize="13.0sp" />
+          </LinearLayout>
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_marginRight="9.5dip" android:layout_marginTop="35.5dip" android:text="6人" android:textColor="#666666" android:textSize="13.0sp" />
+          <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.0dip" android:layout_marginLeft="11.0dip" android:layout_marginTop="48.0dip" android:gravity="center">
+               <com.mdx.framework.widget.MImageView android:layout_width="10.0dip" android:layout_height="11.5dip" android:src="@drawable/ic_time" />
+               <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="2016-09-24" android:textColor="#666666" android:textSize="12.0sp" />
+               <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.5dip" android:text="晚餐" android:textColor="#4074EC" android:textSize="12.0sp" />
+          </LinearLayout>
+     </com.mdx.framework.autofit.layout.FitRelativeLayout>
+</layout>
+

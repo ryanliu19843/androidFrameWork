@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+     <data>
+          <variable name="F" type="com.mdx.framework.autofit.AutoFit" />
+          <variable name="P" type="java.util.HashMap" />
+          <import type="com.udows.canyin.proto.ApisFactory" />
+          <import type="com.mdx.framework.commons.verify.Md5" />
+     </data>
+     <com.mdx.framework.autofit.layout.FitRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+          <EditText android:id="@+id/store" android:layout_width="match_parent" android:layout_height="48dip" android:background="@color/colorPrimary" android:gravity="center" android:text="002@458996" android:textSize="20sp" />
+          <EditText android:id="@+id/name" android:layout_width="match_parent" android:layout_height="48dip" android:background="@color/colorPrimary" android:gravity="center" android:text="001" android:textSize="20sp" />
+          <EditText android:id="@+id/psw" android:layout_width="match_parent" android:layout_height="48dip" android:background="@color/colorPrimary" android:gravity="center" android:text="123456" android:textSize="20sp" />
+          <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登陆" android:onClick="@{(v)-&gt;F.save(ApisFactory.getApiEmpLogin().set((String)F.V(@id/store),(String)F.V(@id/name,F.NUM,&quot;门店&quot;),Md5.mD5((String)F.V(@id/psw)),&quot;android&quot;,&quot;111111111&quot;),&quot;_user&quot;).CKERR().close().startActivity(@layout/frg_autofittest,F.CV(&quot;&quot;,&quot;&quot;))}" />
+          <Spinner android:id="@+id/spinner" android:layout_width="match_parent" android:layout_height="wrap_content" />
+     </com.mdx.framework.autofit.layout.FitRelativeLayout>
+</layout>
+

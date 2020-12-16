@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+                                                        
+
+    
+                 
+                    
+                                                       
+
+                 
+                    
+                                                                  
+
+                 
+                       
+                                                                                   
+
+           
+
+    <FrameLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="58dip"
+        android:tag="layout/default_selphoto_item_dir_select_0"                                                             
+        android:orientation="horizontal"  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.mdx.framework.widget.MImageView
+            android:id="@+id/iv_dir"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="4dip"
+            android:scaleType="centerCrop"
+            android:tag="binding_1"                  />
+
+        <TextView
+            android:id="@+id/tv_dirname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="58dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dip"
+            android:tag="binding_2"                                    />
+    </FrameLayout>
+
+
+         

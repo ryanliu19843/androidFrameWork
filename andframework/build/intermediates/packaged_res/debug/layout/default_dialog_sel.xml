@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/j320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/default_bg_regc_tra">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#d8d8d8"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dip"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="60dip"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/queding"
+            android:textColor="@drawable/default_bt_color_tv"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_margin="1px"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <com.mdx.framework.widget.spinnerwheel.WheelVerticalView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            wheel:selectionDivider="@drawable/default_bg_seldia_wheel"
+            wheel:selectionDividerHeight="1dip"
+            wheel:visibleItems="5" />
+
+        <com.mdx.framework.widget.spinnerwheel.WheelVerticalView
+            android:id="@+id/second"
+            android:layout_width="@dimen/j100dp"
+            android:layout_height="wrap_content"
+            wheel:selectionDivider="@drawable/default_bg_seldia_wheel"
+            wheel:selectionDividerHeight="1dip"
+            wheel:visibleItems="5" />
+
+        <com.mdx.framework.widget.spinnerwheel.WheelVerticalView
+            android:id="@+id/threed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            wheel:itemsPadding="@dimen/j5dp"
+            wheel:selectionDivider="@drawable/default_bg_seldia_wheel"
+            wheel:selectionDividerHeight="1dip"
+            wheel:visibleItems="5" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#888888" />
+</RelativeLayout>
+

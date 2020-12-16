@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Apis>
+  <Api Package="com.udows.canyin.proto" Name="canyin"
+      ApiUrl="/mobile?methodno=">
+    <!--获取员工信息-->
+    <Url name="EmpGetInfo" type="21" errorType="0" cacheTime="1" className=".MEmpInfo">EmpGetInfo</Url>
+    <!--测试登录-->
+    <Url name="EmpLoginDemo" type="21" errorType="0" cacheTime="1" className=".MEmpAccount">EmpLoginDemo</Url>
+    <!--登录-->
+    <Url name="EmpLogin" type="21" errorType="0" cacheTime="1" className=".MEmpAccount">EmpLogin</Url>
+    <!--完善员工资料(需要登录)-->
+    <Url name="EmpUpdateInfo" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpUpdateInfo</Url>
+    <!--修改密码(需要登录)-->
+    <Url name="EmpChangePassword" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpChangePassword</Url>
+    <!--注销(需要登录)-->
+    <Url name="EmpLogout" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpLogout</Url>
+    <!--门店餐点列表-->
+    <Url name="EmpTimeList" type="21" errorType="0" cacheTime="1" className=".MTimeList">EmpTimeList</Url>
+    <!--门店信息-->
+    <Url name="EmpStoreInfo" type="21" errorType="0" cacheTime="1" className=".MStoreInfo">EmpStoreInfo</Url>
+    <!--门店菜单-->
+    <Url name="EmpMenu" type="21" errorType="0" cacheTime="1" className=".MMenu">EmpMenu</Url>
+    <!--点菜-->
+    <Url name="EmpAddOrder" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpAddOrder</Url>
+    <!--空闲餐位列表-->
+    <Url name="EmpEmptyDeskList" type="21" errorType="0" cacheTime="1" className=".MDeskList">EmpEmptyDeskList</Url>
+    <!--换餐位-->
+    <Url name="EmpChangeDesk" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpChangeDesk</Url>
+    <!--餐位列表-->
+    <Url name="EmpDeskList" type="21" errorType="0" cacheTime="1" className=".MDeskList">EmpDeskList</Url>
+    <!--餐桌就位收桌-->
+    <Url name="EmpDeskBusyAndClean" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpDeskBusyAndClean</Url>
+    <!--开始走菜-->
+    <Url name="EmpOrderPush" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpOrderPush</Url>
+    <!--餐桌详情-->
+    <Url name="EmpDeskDetail" type="21" errorType="0" cacheTime="1" className=".MDeskDetail">EmpDeskDetail</Url>
+    <!--餐位上菜-->
+    <Url name="EmpDeskCookUp" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpDeskCookUp</Url>
+    <!--待烧菜单-->
+    <Url name="EmpCookList" type="21" errorType="0" cacheTime="1" className=".MCookInfoList">EmpCookList</Url>
+    <!--走菜历史-->
+    <Url name="EmpCookHistoryList" type="21" errorType="0" cacheTime="1" className=".MCookInfoList">EmpCookHistoryList</Url>
+    <!--上菜-->
+    <Url name="EmpCookUp" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpCookUp</Url>
+    <!--取消菜品-->
+    <Url name="EmpCookCancel" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpCookCancel</Url>
+    <!--去支付(deskId或orderId必填)-->
+    <Url name="EmpToPay" type="21" errorType="0" cacheTime="1" className=".MOrderInfo">EmpToPay</Url>
+    <!--优惠券列表-->
+    <Url name="MCouponList" type="21" errorType="0" cacheTime="1" className=".MCouponList">MCouponList</Url>
+    <!--支付完成-->
+    <Url name="EmpPayFinish" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpPayFinish</Url>
+    <!--打印清单-->
+    <Url name="EmpPrintList" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpPrintList</Url>
+    <!--获取其他费用信息-->
+    <Url name="EmpGetOther" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpGetOther</Url>
+    <!--设置其他费用信息-->
+    <Url name="EmpSetOther" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpSetOther</Url>
+    <!--快餐模式订单列表（分页）-->
+    <Url name="EmpKcOrders" type="21" errorType="0" cacheTime="1" className=".MOrderList">EmpKcOrders</Url>
+    <!--快餐模式接单-->
+    <Url name="EmpKcOrderOk" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpKcOrderOk</Url>
+    <!--快餐模式拒单-->
+    <Url name="EmpKcOrderNo" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpKcOrderNo</Url>
+    <!--外卖订单列表（分页）-->
+    <Url name="EmpWmOrders" type="21" errorType="0" cacheTime="1" className=".MOrderList">EmpWmOrders</Url>
+    <!--外卖接单-->
+    <Url name="EmpWmOrderOk" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpWmOrderOk</Url>
+    <!--外卖拒单-->
+    <Url name="EmpWmOrderNo" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpWmOrderNo</Url>
+    <!--公告分类列表-->
+    <Url name="EmpNoticeCateList" type="21" errorType="0" cacheTime="1" className=".MNoticeCateList">EmpNoticeCateList</Url>
+    <!--公告列表(详情webview:url/detail?type=2&id=)-->
+    <Url name="EmpNoticeList" type="21" errorType="0" cacheTime="1" className=".MNoticeList">EmpNoticeList</Url>
+    <!--月排行榜-接待-->
+    <Url name="EmpJdReport" type="21" errorType="0" cacheTime="1" className=".MRankList">EmpJdReport</Url>
+    <!--月排行榜-提成-->
+    <Url name="EmpTcReport" type="21" errorType="0" cacheTime="1" className=".MRankList">EmpTcReport</Url>
+    <!--月排行榜-服务-->
+    <Url name="EmpFwReport" type="21" errorType="0" cacheTime="1" className=".MRankList">EmpFwReport</Url>
+    <!--统计图-->
+    <Url name="EmpStat" type="21" errorType="0" cacheTime="1" className=".MStat">EmpStat</Url>
+    <!--首页统计-->
+    <Url name="EmpIndexReport" type="21" errorType="0" cacheTime="1" className=".MIndexReport">EmpIndexReport</Url>
+    <!--服务列表-->
+    <Url name="EmpServerList" type="21" errorType="0" cacheTime="1" className=".MServerList">EmpServerList</Url>
+    <!--服务设为已处理-->
+    <Url name="EmpServerOk" type="21" errorType="0" cacheTime="1" className="com.udows.common.proto.MRet">EmpServerOk</Url>
+    <!--提成日志列表-->
+    <Url name="EmpInComelogList" type="21" errorType="0" cacheTime="1" className=".MInComelogList">EmpInComelogList</Url>
+  </Api>
+  <Api Package="com.udows.common.proto" Name="canyin"
+      ApiUrl="/mobile?methodno=">
+    <!--上传文件(需要登录)-->
+    <Url name="MUploadFile" type="21" errorType="0" cacheTime="1" className=".MRet">MUploadFile</Url>
+    <!--用户反馈-->
+    <Url name="MFeedback" type="21" errorType="0" cacheTime="1" className=".MRet">MFeedback</Url>
+    <!--获取系统常量-->
+    <Url name="MSysParams" type="21" errorType="0" cacheTime="1" className=".MSysParams">MSysParams</Url>
+    <!--获取单个系统常量-->
+    <Url name="MSysParamByCode" type="21" errorType="0" cacheTime="1" className=".MRet">MSysParamByCode</Url>
+    <!--获取商户常量-->
+    <Url name="MGetCompanyParam" type="21" errorType="0" cacheTime="1" className=".MRet">MGetCompanyParam</Url>
+    <!--获取验证码-->
+    <Url name="MGetMobileMsg" type="21" errorType="0" cacheTime="1" className=".MRet">MGetMobileMsg</Url>
+  </Api>
+
+
+  <Api Package="com.udows.wgh.proto" Name="" DataType="json"
+      ApiUrl="http://gsj.nmgxc.net/index.php/Home/Gsj/">
+    <!--首页-->
+    <Url name="index" type="21" errorType="0" cacheTime="1" className=".Index$IndexData">index</Url>
+  </Api>
+</Apis>

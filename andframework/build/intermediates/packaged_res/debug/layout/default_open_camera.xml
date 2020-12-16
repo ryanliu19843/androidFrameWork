@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/defautlt_framecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/defautlt_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <SurfaceView
+                android:id="@+id/myCameraView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/j80dp"
+                android:layout_alignParentBottom="true"
+                android:background="#55333333"
+                android:paddingLeft="@dimen/j10dp"
+                android:paddingRight="@dimen/j10dp">
+
+                <ImageView
+                    android:id="@+id/camera_position"
+                    android:layout_width="@dimen/j50dp"
+                    android:layout_height="@dimen/j50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bt_zhanhuansxt" />
+
+                <ImageButton
+                    android:id="@+id/camera_shutter"
+                    android:layout_width="@dimen/j50dp"
+                    android:layout_height="@dimen/j50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/j91dp"
+                    android:background="@drawable/bt_paizhao" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/topWidget"
+        style="@style/NoTitleStatus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <com.mdx.framework.widget.ActionBar
+        android:id="@+id/ActionbarWidget"
+        style="@style/NoTitleAction"
+        android:layout_below="@+id/topWidget" />
+
+    <View
+        android:id="@+id/bottomWidget"
+        style="@style/NoTitleNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
+

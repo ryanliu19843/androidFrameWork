@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+                                                       
+                                                   
+
+    
+                 
+                    
+                                                       
+
+                 
+                    
+                                                                  
+           
+
+    <com.mdx.framework.autofit.layout.FitFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:loadApi=''
+        app:saveApi=''
+        app:updateApi='' android:tag="layout/frg_load_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+<!--        app:loadApi='@{F.setAda(@id/recycleview,@layout/default_selphoto_item_image_sel,P["folder"])}'-->
+<!--        app:saveApi=''-->
+<!--        app:updateApi=''-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="没有找到frg_load"></TextView>
+    </com.mdx.framework.autofit.layout.FitFrameLayout>
+         

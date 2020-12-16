@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.mdx.framework.widget.selectphotos.utils.PhotosUtil.ImageItem" />
+
+        <variable
+            name="F"
+            type="com.mdx.framework.autofit.AutoFit" />
+
+        <variable
+            name="P"
+            type="com.mdx.framework.autofit.commons.AutoParams" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/panel_content"
+        android:layout_width="@dimen/j80dp"
+        android:layout_height="@dimen/j80dp"
+        android:onClick='@{(v)->item.iscam?(item.path==null?F.send("SelectPhoto",65):item.showPhoto(F)):item.showPhoto(F)}'
+        android:paddingLeft="1px"
+        android:paddingTop="1px">
+
+        <com.mdx.framework.widget.MImageView
+            android:layout_width="@dimen/j80dp"
+            android:layout_height="@dimen/j80dp"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:visibility="@{item.iscam?View.GONE:View.VISIBLE}"
+            android:src='@drawable/default_df_img_load'
+            app:obj='@{"file:"+item.path}' />
+
+        <com.mdx.framework.widget.MImageView
+            android:layout_width="@dimen/j80dp"
+            android:layout_height="@dimen/j80dp"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:visibility="@{item.iscam?View.VISIBLE:View.GONE}"
+            android:src='@drawable/default_bt_paizhao'
+            app:obj='@{"file:"+item.path}' />
+
+        <View
+            android:id="@+id/maxview"
+            android:layout_width="@dimen/j80dp"
+            android:layout_height="@dimen/j80dp"
+            android:background="#11000000"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/j30dp"
+            android:layout_height="@dimen/j30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/default_photo_sel"
+            android:button="@null"
+            android:checked="@{item.ischecked}"
+            android:gravity="center"
+            android:onCheckedChanged="@{(v,ischeck)->item.setCheck(v,ischeck)}"
+            android:visibility='@{item.iscam?View.GONE:View.VISIBLE}' />
+
+        <Button
+            android:layout_width="@dimen/j30dp"
+            android:layout_height="@dimen/j30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/default_bt_paizhao"
+            android:button="@null"
+            android:onClick='@{()->F.send("SelectPhoto",65)}'
+            android:gravity="center"
+            android:visibility='@{item.iscam?(item.path==null?View.GONE:View.VISIBLE):View.GONE}' />
+    </RelativeLayout>
+</layout>
+

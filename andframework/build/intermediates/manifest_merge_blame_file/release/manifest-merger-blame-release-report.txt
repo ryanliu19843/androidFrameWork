@@ -1,0 +1,390 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.mdx.framework"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="19"
+9-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml
+11
+12    <!-- 允许程序打开网络套接字 -->
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:7:5-67
+13-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:7:22-64
+14    <!-- 允许程序设置内置sd卡的写权限 -->
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:9:5-81
+15-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:9:22-78
+16    <!-- 允许程序获取网络状态 -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:11:5-79
+17-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:11:22-76
+18    <!-- 允许程序访问WiFi网络信息 -->
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+19-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:13:5-76
+19-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:13:22-73
+20    <!-- 允许程序读写手机状态和身份 -->
+21    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+21-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:15:5-75
+21-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:15:22-72
+22    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:17:5-81
+23-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:17:22-78
+24    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+24-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:18:5-79
+24-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:18:22-76
+25    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+25-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:21:5-81
+25-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:21:22-78
+26    <uses-permission
+26-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:22:5-24:47
+27        android:name="android.permission.WRITE_SETTINGS"
+27-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:23:9-57
+28        tools:ignore="ProtectedPermissions" />
+28-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:24:9-44
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:25:5-66
+29-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:25:22-63
+30    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+30-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:26:5-82
+30-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:26:22-79
+31    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+31-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:27:5-88
+31-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:27:22-85
+32    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+32-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:28:5-75
+32-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:28:22-72
+33    <uses-permission
+33-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:29:5-31:47
+34        android:name="android.permission.MANAGE_DOCUMENTS"
+34-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:30:9-59
+35        tools:ignore="ProtectedPermissions" />
+35-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:31:9-44
+36    <uses-permission android:name="android.permission.CAMERA" />
+36-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:32:5-65
+36-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:32:22-62
+37    <uses-permission android:name="android.permission.SEND_SMS" />
+37-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:33:5-67
+37-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:33:22-64
+38    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+38-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:34:5-84
+38-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:34:22-81
+39    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+39-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:35:5-76
+39-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:35:22-73
+40
+41    <application
+41-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:38:5-210:19
+42        android:allowBackup="true"
+42-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:39:9-35
+43        android:appComponentFactory="androidframework"
+43-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:40:9-55
+44        android:supportsRtl="true"
+44-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:41:9-35
+45        tools:replace="android:appComponentFactory" >
+45-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:42:9-52
+46
+47        <!-- **************************************框架act 注册开始************************************************* -->
+48
+49        <activity
+49-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:45:9-50:65
+50            android:name="com.mdx.framework.activity.LoadingAct"
+50-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:46:13-65
+51            android:configChanges="orientation|keyboardHidden|screenSize"
+51-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:47:13-74
+52            android:screenOrientation="portrait"
+52-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:48:13-49
+53            android:theme="@style/actNNS"
+53-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:49:13-42
+54            tools:ignore="LockedOrientationActivity" />
+54-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:50:13-53
+55        <activity
+55-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:52:9-58:65
+56            android:name="com.mdx.framework.activity.IndexAct"
+56-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:53:13-63
+57            android:configChanges="orientation|keyboardHidden|screenSize"
+57-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:54:13-74
+58            android:screenOrientation="portrait"
+58-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:55:13-49
+59            android:theme="@style/act"
+59-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:56:13-39
+60            android:windowSoftInputMode="adjustPan"
+60-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:57:13-52
+61            tools:ignore="LockedOrientationActivity" />
+61-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:58:13-53
+62        <activity
+62-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:60:9-65:65
+63            android:name="com.mdx.framework.activity.TitleAct"
+63-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:61:13-63
+64            android:configChanges="orientation|keyboardHidden|screenSize"
+64-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:62:13-74
+65            android:screenOrientation="portrait"
+65-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:63:13-49
+66            android:theme="@style/transparentact"
+66-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:64:13-50
+67            tools:ignore="LockedOrientationActivity" />
+67-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:65:13-53
+68        <!--  -->
+69        <activity
+69-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:67:9-74:20
+70            android:name="com.mdx.framework.activity.TitleTransparentAct"
+70-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:68:13-74
+71            android:configChanges="orientation|keyboardHidden|screenSize"
+71-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:69:13-74
+72            android:screenOrientation="portrait"
+72-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:70:13-49
+73            android:theme="@style/transparentact"
+73-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:71:13-50
+74            tools:ignore="LockedOrientationActivity" >
+74-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:72:13-53
+75        </activity>
+76        <activity
+76-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:75:9-80:65
+77            android:name="com.mdx.framework.activity.NoTitleAct"
+77-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:76:13-65
+78            android:screenOrientation="portrait"
+78-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:77:13-49
+79            android:theme="@style/transparentact"
+79-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:78:13-50
+80            android:windowSoftInputMode="stateHidden|adjustResize"
+80-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:79:13-67
+81            tools:ignore="LockedOrientationActivity" />
+81-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:80:13-53
+82        <activity
+82-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:82:9-87:65
+83            android:name="com.mdx.framework.activity.TitleTransStatusAct"
+83-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:83:13-74
+84            android:configChanges="orientation|keyboardHidden|screenSize"
+84-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:84:13-74
+85            android:screenOrientation="portrait"
+85-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:85:13-49
+86            android:theme="@style/transparentactNS"
+86-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:86:13-52
+87            tools:ignore="LockedOrientationActivity" />
+87-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:87:13-53
+88        <activity
+88-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:88:9-95:20
+89            android:name="com.mdx.framework.activity.PTitleAct"
+89-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:89:13-64
+90            android:configChanges="orientation|keyboardHidden|screenSize"
+90-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:90:13-74
+91            android:screenOrientation="portrait"
+91-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:91:13-49
+92            android:theme="@style/transparentact"
+92-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:92:13-50
+93            tools:ignore="LockedOrientationActivity" >
+93-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:93:13-53
+94        </activity>
+95        <activity
+95-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:97:9-105:20
+96            android:name="com.mdx.framework.activity.taskactivity.ActRestart"
+96-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:99:13-78
+97            android:configChanges="orientation|keyboardHidden|screenSize"
+97-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:100:13-74
+98            android:screenOrientation="portrait"
+98-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:101:13-49
+99            android:theme="@style/Dialog"
+99-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:102:13-42
+100            tools:ignore="LockedOrientationActivity" >
+100-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:103:13-53
+101        </activity>
+102        <activity
+102-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:107:9-112:65
+103            android:name="com.mdx.framework.activity.taskactivity.UpdateSelfAct"
+103-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:108:13-81
+104            android:configChanges="orientation|keyboardHidden|screenSize"
+104-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:109:13-74
+105            android:screenOrientation="portrait"
+105-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:110:13-49
+106            android:theme="@style/Dialog"
+106-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:111:13-42
+107            tools:ignore="LockedOrientationActivity" />
+107-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:112:13-53
+108
+109        <!--  -->
+110        <activity
+110-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:115:9-130:20
+111            android:name="com.mdx.framework.activity.PTitleTransparentAct"
+111-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:116:13-75
+112            android:configChanges="orientation|keyboardHidden|screenSize"
+112-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:117:13-74
+113            android:excludeFromRecents="true"
+113-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:118:13-46
+114            android:noHistory="false"
+114-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:119:13-38
+115            android:process=":com.mdx.framework.process"
+115-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:120:13-57
+116            android:screenOrientation="unspecified"
+116-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:121:13-52
+117            android:theme="@style/transparentact"
+117-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:122:13-50
+118            android:windowSoftInputMode="adjustResize"
+118-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:123:13-55
+119            tools:ignore="LockedOrientationActivity" >
+119-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:124:13-53
+120            <intent-filter>
+120-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:125:13-129:29
+121                <action android:name="com.mdx.framework.process" />
+121-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:17-68
+121-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:25-65
+122
+123                <category android:name="android.intent.category.DEFAULT" />
+123-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:17-76
+123-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:27-73
+124            </intent-filter>
+125        </activity>
+126        <activity
+126-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:131:9-142:20
+127            android:name="com.mdx.framework.activity.PNoTitleAct"
+127-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:132:13-66
+128            android:process=":com.mdx.framework.process"
+128-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:133:13-57
+129            android:theme="@style/transparentact"
+129-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:134:13-50
+130            android:windowSoftInputMode="adjustPan|stateHidden"
+130-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:135:13-64
+131            tools:ignore="LockedOrientationActivity" >
+131-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:136:13-53
+132            <intent-filter>
+132-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:125:13-129:29
+133                <action android:name="com.mdx.framework.process" />
+133-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:17-68
+133-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:25-65
+134
+135                <category android:name="android.intent.category.DEFAULT" />
+135-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:17-76
+135-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:27-73
+136            </intent-filter>
+137        </activity>
+138        <activity
+138-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:143:9-155:20
+139            android:name="com.mdx.framework.activity.PTitleTransStatusAct"
+139-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:144:13-75
+140            android:configChanges="orientation|keyboardHidden|screenSize"
+140-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:145:13-74
+141            android:process=":com.mdx.framework.process"
+141-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:146:13-57
+142            android:screenOrientation="portrait"
+142-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:147:13-49
+143            android:theme="@style/transparentactNS"
+143-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:148:13-52
+144            tools:ignore="LockedOrientationActivity" >
+144-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:149:13-53
+145            <intent-filter>
+145-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:125:13-129:29
+146                <action android:name="com.mdx.framework.process" />
+146-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:17-68
+146-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:25-65
+147
+148                <category android:name="android.intent.category.DEFAULT" />
+148-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:17-76
+148-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:27-73
+149            </intent-filter>
+150        </activity>
+151        <activity
+151-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:156:9-168:20
+152            android:name="com.mdx.framework.widget.getphoto.ActCameraStream"
+152-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:157:13-77
+153            android:configChanges="orientation|keyboardHidden|screenSize"
+153-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:158:13-74
+154            android:process=":com.mdx.framework.process"
+154-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:159:13-57
+155            android:screenOrientation="portrait"
+155-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:160:13-49
+156            android:theme="@style/transparentact"
+156-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:161:13-50
+157            tools:ignore="LockedOrientationActivity" >
+157-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:162:13-53
+158            <intent-filter>
+158-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:125:13-129:29
+159                <action android:name="com.mdx.framework.process" />
+159-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:17-68
+159-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:25-65
+160
+161                <category android:name="android.intent.category.DEFAULT" />
+161-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:17-76
+161-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:27-73
+162            </intent-filter>
+163        </activity>
+164        <activity
+164-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:170:9-183:20
+165            android:name="com.mdx.framework.activity.CameraActivity"
+165-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:171:13-69
+166            android:configChanges="orientation|keyboardHidden|screenSize"
+166-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:172:13-74
+167            android:excludeFromRecents="true"
+167-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:173:13-46
+168            android:process=":com.mdx.framework.process"
+168-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:174:13-57
+169            android:screenOrientation="portrait"
+169-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:175:13-49
+170            android:theme="@style/transparentact"
+170-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:176:13-50
+171            tools:ignore="LockedOrientationActivity" >
+171-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:177:13-53
+172            <intent-filter>
+172-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:125:13-129:29
+173                <action android:name="com.mdx.framework.process" />
+173-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:17-68
+173-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:25-65
+174
+175                <category android:name="android.intent.category.DEFAULT" />
+175-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:17-76
+175-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:27-73
+176            </intent-filter>
+177        </activity>
+178
+179        <service
+179-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:185:9-194:19
+180            android:name="com.mdx.framework.server.LogUpdateService"
+180-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:186:13-69
+181            android:exported="false"
+181-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:187:13-37
+182            android:process=":com.mdx.framework.process" >
+182-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:188:13-57
+183            <intent-filter>
+183-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:125:13-129:29
+184                <action android:name="com.mdx.framework.process" />
+184-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:17-68
+184-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:126:25-65
+185
+186                <category android:name="android.intent.category.DEFAULT" />
+186-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:17-76
+186-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:128:27-73
+187            </intent-filter>
+188        </service>
+189        <!-- 读取二维码 -->
+190        <activity
+190-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:196:9-202:65
+191            android:name="com.mdx.framework.activity.DecodeCodeActivity"
+191-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:197:13-73
+192            android:configChanges="orientation|keyboardHidden|screenSize"
+192-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:198:13-74
+193            android:excludeFromRecents="true"
+193-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:199:13-46
+194            android:screenOrientation="portrait"
+194-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:200:13-49
+195            android:theme="@style/transparentact"
+195-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:201:13-50
+196            tools:ignore="LockedOrientationActivity" />
+196-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:202:13-53
+197
+198        <receiver android:name="com.mdx.framework.utility.commons.UpdataBroadcastReceiver" >
+198-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:204:9-208:20
+198-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:204:19-91
+199            <intent-filter>
+199-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:205:13-207:29
+200                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+200-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:206:17-82
+200-->F:\project\androids\androidframework\andframework\src\main\AndroidManifest.xml:206:25-79
+201            </intent-filter>
+202        </receiver>
+203        <!-- **************************************框架act 注册结束 ************************************************* -->
+204    </application>
+205
+206</manifest>

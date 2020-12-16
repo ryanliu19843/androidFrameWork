@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="F"
+            type="com.mdx.framework.autofit.AutoFit" />
+
+        <variable
+            name="item"
+            type="String" />
+
+        <variable
+            name="content"
+            type="com.mdx.framework.autofit.AutoFitFragment" />
+
+        <variable
+            name="card"
+            type="com.mdx.framework.widget.pagerecycleview.ada.Card" />
+
+        <variable
+            name="P"
+            type="com.mdx.framework.autofit.commons.AutoParams" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <com.mdx.framework.autofit.layout.FitLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:orientation="vertical"
+        app:loadApi="">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:onClick='@{()-&gt;F.setParams(@layout/frg_poptest,"#item","设置").close()}'
+            android:text='@{item}'
+            android:textColor="#666"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:onClick='@{()-&gt;F.setParams(@layout/frg_poptest,"#item","open").close()}'
+            android:text="打开"
+            android:textColor="#666"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:onClick='@{()-&gt;F.setParams(@layout/frg_poptest,"#item","copy").close()}'
+            android:text="复制"
+            android:textColor="#666"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:onClick='@{()-&gt;F.setParams(@layout/frg_poptest,"#item","delete").close()}'
+            android:text="删除"
+            android:textColor="#666"
+            android:textSize="16dp" />
+    </com.mdx.framework.autofit.layout.FitLinearLayout>
+</layout>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+     <string name="pull_state_a">松开刷新</string>
+     <string name="pull_state_b">下拉刷新</string>
+     <string name="pull_state_c">正在刷新</string>
+     <string name="loading_load">正在加载，请稍后</string>
+     <string name="footer_loading">加载中....</string>
+     <string name="prompt_loading">加载中....</string>
+     <string name="photocut_loading">处理中请稍后</string>
+     <string name="complete">完成</string>
+     <string name="choose_photo">选择照片</string>
+     <string name="getphoto_queren">确认</string>
+     <string name="getphoto_xuanzhuan">旋转</string>
+     <string name="getphoto_quxiao">取消</string>
+     <string name="contentDescription">说明</string>
+     <string name="send">发送</string>
+     <string name="save">保存</string>
+     <string name="save_success">保存成功</string>
+     <string name="save_unsuccess">保存失败</string>
+     <string name="update_download">正在下载</string>
+     <string name="update_downloaded">下载完成,点击安装</string>
+     <string name="update_downloading">应用程序正在更新.</string>
+     <string name="update_waitfinish">应用程序正在更新,请等待更新完成</string>
+     <string name="update_willdownload">应用程序即将更新,是否继续</string>
+
+     <string name="update_readyinsall">应用更新已准备好，无需流量立刻安装</string>
+     <string name="cancle">取消</string>
+     <string name="submit">确定</string>
+     <string name="update_startdownload">开始更新</string>
+     <string name="update_newest">已经是最新版本</string>
+     <string name="click_exit">再按一次退出程序</string>
+     <string name="page_nodate">暂无数据，点击重新加载</string>
+     <string name="click_reload">点击重新加载</string>
+     <string-array name="errorname">
+          <item>98:连接服务器异常</item>
+          <item>error1:接口处理方法未定义</item>
+          <item>error2:接口处理错误</item>
+          <item>error3:密码格式不正确</item>
+          <item>error4:密码格式不正确</item>
+     </string-array>
+     <string name="update_once_time">300000</string>
+     <string name="verify_carid_num">身份证号码长度应该为15位或18位。</string>
+     <string name="verify_carid_lasnum">身份证15位号码都应为数字 ; 18位号码除最后一位外，都应为数字。</string>
+     <string name="verify_carid_birthday">身份证生日无效。</string>
+     <string name="verify_carid_birthdayerror">身份证生日不在有效范围。</string>
+     <string name="verify_carid_montherror">身份证月份无效</string>
+     <string name="verify_carid_dayerror">身份证日期无效</string>
+     <string name="verify_carid_addrerror">身份证地区编码错误。</string>
+     <string name="verify_carid_error">身份证无效，不是合法的身份证号码</string>
+
+     <string name="verivy_number">必须是数字</string>
+     <string name="verivy_number_max">必须输入一个%d到%d之间的数字</string>
+     <string name="verivy_phone">必须输入手机号</string>
+     <string name="verivy_idcard">必须输入有效身份证号</string>
+     <string name="verivy_mail">必须输入有效邮箱</string>
+     <string name="verivy_null">不能为空</string>
+     <string name="verivy_lenerror">输入长度必须%d到%d</string>
+     <string name="photoall">所有图片</string>
+
+     <string name="verify_carid_addres_11">北京</string>
+     <string name="verify_carid_addres_12">天津</string>
+     <string name="verify_carid_addres_13">河北</string>
+     <string name="verify_carid_addres_14">山西</string>
+     <string name="verify_carid_addres_15">内蒙古</string>
+     <string name="verify_carid_addres_21">辽宁</string>
+     <string name="verify_carid_addres_22">吉林</string>
+     <string name="verify_carid_addres_23">黑龙江</string>
+     <string name="verify_carid_addres_31">上海</string>
+     <string name="verify_carid_addres_32">江苏</string>
+     <string name="verify_carid_addres_33">浙江</string>
+     <string name="verify_carid_addres_34">安徽</string>
+     <string name="verify_carid_addres_35">福建</string>
+     <string name="verify_carid_addres_36">江西</string>
+     <string name="verify_carid_addres_37">山东</string>
+     <string name="verify_carid_addres_41">河南</string>
+     <string name="verify_carid_addres_42">湖北</string>
+     <string name="verify_carid_addres_43">湖南</string>
+     <string name="verify_carid_addres_44">广东</string>
+     <string name="verify_carid_addres_45">广西</string>
+     <string name="verify_carid_addres_46">海南</string>
+     <string name="verify_carid_addres_50">重庆</string>
+     <string name="verify_carid_addres_51">四川</string>
+     <string name="verify_carid_addres_52">贵州</string>
+     <string name="verify_carid_addres_53">云南</string>
+     <string name="verify_carid_addres_54">西藏</string>
+     <string name="verify_carid_addres_61">陕西</string>
+     <string name="verify_carid_addres_62">甘肃</string>
+     <string name="verify_carid_addres_63">青海</string>
+     <string name="verify_carid_addres_64">宁夏</string>
+     <string name="verify_carid_addres_65">新疆</string>
+     <string name="verify_carid_addres_71">台湾</string>
+     <string name="verify_carid_addres_81">香港</string>
+     <string name="verify_carid_addres_82">澳门</string>
+     <string name="verify_carid_addres_91">国外</string>
+     <string name="anim_change_text">切换动画id</string>
+</resources>
+

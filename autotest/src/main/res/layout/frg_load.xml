@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="F"
+            type="com.mdx.framework.autofit.AutoFit" />
+
+        <variable
+            name="P"
+            type="com.mdx.framework.autofit.commons.AutoParams" />
+
+        <import type="com.mdx.framework.commons.verify.Md5" />
+
+        <import type="android.view.inputmethod.EditorInfo" />
+
+        <import type="com.mdx.framework.utility.Helper" />
+
+        <import type="com.mdx.framework.utility.Device" />
+
+        <import type="com.mdx.framework.autofit.commons.MIT" />
+
+        <import type="com.example.autotest.frg.FrgComn" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:loadApi=""
+        app:saveApi=""
+        app:updateApi="">
+
+        <com.mdx.framework.autofit.layout.FitFrgViewPage
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            app:fragments="@{MIT.getSF(F,@id/magic_indicator1,0xff79d6f2,MIT.get(@layout/frg_imgtest,@string/nav_1,@drawable/tylt_bt_shouye_n),MIT.get(@layout/frg_poptest,@string/nav_2,@drawable/tylt_bt_feilei_n),MIT.get(FrgComn.Instance(),@string/nav_3,@drawable/tylt_bt_luntan_n),MIT.get(@layout/frg_acttest,@string/nav_4,@drawable/tylt_bt_wo_n))}" />
+
+        <com.mdx.framework.widget.magicindicator.MagicIndicator
+            android:id="@+id/magic_indicator1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#fcfcfc" />
+    </LinearLayout>
+</layout>
+

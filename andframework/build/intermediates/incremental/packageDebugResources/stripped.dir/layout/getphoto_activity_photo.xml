@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/defautlt_framecontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/defautlt_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomWidget"
+        android:layout_below="@+id/topWidget"
+        android:background="@color/actcamerstring_background">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mdx.framework.widget.cropper.CropImageView
+                android:id="@+id/CropImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/cropper_quxiao"
+                android:padding="@dimen/j5dp"
+                android:text="@string/getphoto_quxiao"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/cropper_xuanzhuan"
+                android:padding="@dimen/j5dp"
+                android:text="@string/getphoto_xuanzhuan"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/cropper_queren"
+                android:padding="@dimen/j5dp"
+                android:text="@string/getphoto_queren"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/photocut_loading"
+        android:textColor="#cccccc"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/topWidget"
+        style="@style/NoTitleStatus"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <com.mdx.framework.widget.ActionBar
+        android:id="@+id/ActionbarWidget"
+        style="@style/NoTitleAction"
+        android:layout_below="@+id/topWidget" />
+
+    <View
+        android:id="@+id/bottomWidget"
+        style="@style/NoTitleNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true" />
+
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="F"
+            type="com.mdx.framework.autofit.AutoFit" />
+
+        <variable
+            name="P"
+            type="com.mdx.framework.autofit.commons.AutoParams" />
+
+        <import type="com.mdx.framework.widget.selectphotos.utils.PhotosUtil.Folder"></import>
+    </data>
+
+    <com.mdx.framework.autofit.layout.FitLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:loadApi='@{F.setAda(@id/recycleview,@layout/default_selphoto_item_image_sel,P["folder"])}'
+        app:saveApi=''
+        app:updateApi=''>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:background="@color/actionBarColor">
+
+            <ImageButton
+                android:id="@+id/back"
+                style="@style/photoShowAction"
+                android:contentDescription="@string/contentDescription"
+                android:onClick="@{(v)->F.close()}"
+                android:scaleType="fitXY" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="@{(v)->F.pop(v,@layout/default_selphoto_pop_dir_select)}">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:maxLength="15"
+                    android:text='@{((Folder)P["folder"]).name}'
+                    android:textColor="@color/actionTextColor"
+                    android:textSize="16sp" />
+
+                <com.mdx.framework.widget.MImageView
+                    android:layout_width="13dip"
+                    android:layout_height="7dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="2dip"
+                    android:src="@drawable/navigationbar_arrow_down"
+                    app:toColor="@color/actionArrowDownColor" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/actionTextColor"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.mdx.framework.widget.pagerecycleview.MRecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            app:column="4" />
+    </com.mdx.framework.autofit.layout.FitLinearLayout>
+</layout>

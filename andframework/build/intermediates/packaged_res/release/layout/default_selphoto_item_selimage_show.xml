@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+                                                        
+
+    
+
+                 
+                       
+                                                                                      
+
+                 
+                    
+                                                       
+
+                 
+                    
+                                                                  
+
+           
+
+    <RelativeLayout
+        android:id="@+id/panel_content"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:paddingLeft="1px"
+        android:tag="layout/default_selphoto_item_selimage_show_0"                  
+                                                                    
+        android:paddingTop="1px"  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.mdx.framework.widget.MImageView
+            android:id="@+id/image"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_margin="4dip"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_df_img_load"
+            android:tag="binding_1"        />
+        />
+    </RelativeLayout>
+         

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+     <data>
+          <variable name="F" type="com.mdx.framework.autofit.AutoFit" />
+          <variable name="P" type="java.util.HashMap" />
+     </data>
+     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#fff" android:orientation="vertical">
+          <TextView android:id="@+id/state_all" android:layout_width="match_parent" android:layout_height="40dip" style="@style/kcxdselectpop" android:onClick="@{()-&gt;F.setParams(@layout/frg_autofittest,&quot;state&quot;,&quot;0&quot;,&quot;flname&quot;,&quot;all&quot;).close()}" android:text="全部" />
+          <View android:layout_width="match_parent" android:layout_height="1px" android:background="#eee" />
+          <TextView android:id="@+id/state_dfk" android:layout_width="match_parent" android:layout_height="40dip" style="@style/kcxdselectpop" android:onClick="@{()-&gt;F.setParams(@layout/frg_autofittest,&quot;state&quot;,&quot;1&quot;,&quot;flname&quot;,&quot;dfk&quot;).close()}" android:text="待付款" />
+          <View android:layout_width="match_parent" android:layout_height="1px" android:background="#eee" />
+          <TextView android:id="@+id/state_djd" android:layout_width="match_parent" android:layout_height="40dip" android:onClick="@{()-&gt;F.setParams(@layout/frg_autofittest,&quot;state&quot;,&quot;2&quot;,&quot;flname&quot;,&quot;djd&quot;).close()}" style="@style/kcxdselectpop" android:text="待接单" />
+          <View android:layout_width="match_parent" android:layout_height="1px" android:background="#eee" />
+          <TextView android:id="@+id/state_yjd" android:layout_width="match_parent" android:layout_height="40dip" style="@style/kcxdselectpop" android:onClick="@{()-&gt;F.setParams(@layout/frg_autofittest,&quot;state&quot;,&quot;3&quot;,&quot;flname&quot;,&quot;yjd&quot;).close()}" android:text="已接单" />
+          <View android:layout_width="match_parent" android:layout_height="1px" android:background="#eee" />
+          <TextView android:id="@+id/state_yjud" android:layout_width="match_parent" android:layout_height="40dip" style="@style/kcxdselectpop" android:onClick="@{()-&gt;F.setParams(@layout/frg_autofittest,&quot;state&quot;,&quot;4&quot;,&quot;flname&quot;,&quot;ysd&quot;).close()}" android:text="已拒单" />
+          <View android:layout_width="match_parent" android:layout_height="1px" android:background="#eee" />
+          <TextView android:id="@+id/state_yqx" android:layout_width="match_parent" android:layout_height="40dip" android:onClick="@{()-&gt;F.setParams(@layout/frg_autofittest,&quot;state&quot;,&quot;5&quot;,&quot;flname&quot;,&quot;yqx&quot;).close()}" style="@style/kcxdselectpop" android:text="已取消" />
+          <View android:layout_width="match_parent" android:layout_height="1px" android:background="#eee" />
+          <TextView android:id="@+id/state_ywc" android:layout_width="match_parent" android:layout_height="40dip" android:onClick="@{()-&gt;F.setParams(@layout/frg_autofittest,&quot;state&quot;,&quot;0&quot;,&quot;flname&quot;,&quot;ywc&quot;).close()}" style="@style/kcxdselectpop" android:text="已完成" />
+          <View android:layout_width="match_parent" android:layout_height="1px" android:background="#eee" />
+     </LinearLayout>
+</layout>
+

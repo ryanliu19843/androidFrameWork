@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2012 Jake Wharton
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+     <color name="A">#ff454965</color>
+     <color name="B">#ff01ceff</color>
+     <color name="C">#ff454965</color>
+     <color name="D">#ff454965</color>
+     <color name="E">#ff01ceff</color>
+     <color name="F">#00000000</color>
+     <color name="G">#fff600ff</color>
+     <color name="NVA">#ff454965</color>
+     <color name="NVB">#ff01ceff</color>
+
+     <color name="FA">#ff454965</color>
+     <color name="FB">#ff01ceff</color>
+
+     <color name="navigationBarColor">@color/A</color>
+     <color name="statusBarcolor">@color/A</color>
+     <color name="statusBarcolorDark">@color/A</color>
+     <color name="actionBarColor">@color/A</color>
+     <color name="actionTextColor">#ffffffff</color>
+     <color name="actionArrowDownColor">#ffffffff</color>
+     <color name="colorAccent">#ff454965</color>
+     <color name="photoall_bg">#ffcccccc</color>
+     <color name="photo_bg">#ffffffff</color>
+
+     <bool name="windowTranslucentNavigation">false</bool>
+     <bool name="windowTranslucentStatus">false</bool>
+</resources>
+

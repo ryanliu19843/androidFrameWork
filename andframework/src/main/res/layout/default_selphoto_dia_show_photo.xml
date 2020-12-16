@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="F"
+            type="com.mdx.framework.autofit.AutoFit" />
+
+        <variable
+            name="P"
+            type="com.mdx.framework.autofit.commons.AutoParams" />
+
+        <import type="android.widget.Toast"></import>
+
+        <import type="com.mdx.framework.widget.selectphotos.utils.PhotosUtil.Folder"></import>
+
+        <import type="com.mdx.framework.widget.selectphotos.utils.PhotosUtil"></import>
+    </data>
+
+    <com.mdx.framework.autofit.layout.FitLinearLayout
+        android:id="@+id/contextview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:orientation="vertical"
+        app:loadApi=''
+        app:saveApi=''
+        app:updateApi=''>
+
+        <RelativeLayout
+            android:id="@+id/actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/actionBarColor">
+
+            <ImageButton
+                android:id="@+id/back"
+                style="@style/photoShowAction"
+                android:contentDescription="@string/contentDescription"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:text="确定"
+                android:textColor="@color/actionTextColor"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.mdx.framework.widget.MViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/actionBarColor"></androidx.recyclerview.widget.RecyclerView>
+
+            <com.mdx.framework.widget.viewpagerindicator.UnderlinePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/j1dp"
+                android:layout_alignParentBottom="true"
+                app:lineWidth="@dimen/j30dp"
+                app:selectedColor="@color/photo_dia_selectedColor"
+                app:strokeWidth="@dimen/j4dp"
+                app:unselectedColor="@color/photo_dia_unselectedColor" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/actionBarColor"
+            android:gravity="right">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dip"
+                android:colorControlNormal="@color/A"
+                android:colorControlActivated="@color/B"
+                android:text="选择"
+                android:textColor="@color/B"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+    </com.mdx.framework.autofit.layout.FitLinearLayout>
+</layout>

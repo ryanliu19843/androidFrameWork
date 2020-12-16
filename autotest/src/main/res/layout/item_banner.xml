@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/contentView" android:layout_width="match_parent" android:layout_height="120dp" android:orientation="vertical">
+     <com.mdx.framework.widget.banner.CirleCurr android:id="@+id/ciclecurr" android:layout_width="match_parent" android:layout_height="120dp" />
+</LinearLayout>
+

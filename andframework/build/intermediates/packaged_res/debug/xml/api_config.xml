@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Apis
+    Package="com.mdx.store.data.proto"
+    ApiUrl=""
+    Upencode=""
+    Encode=""
+    DataType=""
+    >
+
+  <Api Package="com.mdx.store.data.proto"
+       Upencode=""
+       type="10"
+       Encode=""
+       DataType="json"
+       Name="">
+
+    <!-- name 接口名称
+   		type  千上  0 .使用缓存   十上  1.使用get方法(datatype=json有效)   百位 1 有错误时调用回调函数
+   		errorType  个位上 0 显示错误信息   其他不显示错误信息  百位上  错误继续执行回调  否则错误不回掉
+   		cacheTime 缓存时间
+   		className  返回映射类
+   -->
+    <!--登录-传入参数(UserInfo)-->
+
+    <Url name="DoLogin" type="111" errorType="0" cacheTime="1" className=".Gongying$Login">doLogin</Url>
+
+    <!--查查询库存-传入参数(UserKey)-->
+    <Url name="DoQueryKc" type="21" errorType="0" cacheTime="1" className=".Gongying$QueryKcList">doQueryKc</Url>
+
+    <!--查询门店-传入参数(UserKey)-->
+    <Url name="doQueryMD" type="21" errorType="0" cacheTime="1" className=".Gongying$QueryMdList">doQueryMD</Url>
+
+    <!--查询积分-传入参数(UserKey)-->
+    <Url name="doQueryJdk" type="21" errorType="0" cacheTime="1" className=".Gongying$QueryJdkList">doQueryJdk</Url>
+
+    <!--扫描-传入参数(Userxsck)-->
+    <Url name="doXsck" type="21" errorType="0" cacheTime="1" className=".Gongying$Xsck">doXsck</Url>
+
+    <!--扫描码查询商品信息 参数 UserMD-->
+    <Url name="doQueryXjCK" type="21" errorType="0" cacheTime="1" className=".Gongying$QueryCKBySMMList">doQueryXjCK</Url>
+
+    <!--扫描码查询商品信息 参数 UserMD-->
+    <Url name="doQueryCKBySMM" type="21" errorType="0" cacheTime="1" className=".Gongying$QueryCKBySMMList">doQueryCKBySMM</Url>
+
+  </Api>
+
+
+</Apis>

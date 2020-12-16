@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@id/float_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:lines="1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textIsSelectable="true" />
+    <!-- The default EditText includes 7dp of top spacing (4dp optical), so we offset by that to tighten up the Views -->
+    <EditText
+        android:id="@id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/f7dp"
+        android:inputType="text|textAutoCorrect|textCapSentences|textAutoComplete" />
+</merge>
+

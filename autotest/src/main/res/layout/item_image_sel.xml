@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/panel_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="1dip" android:paddingTop="1dip">
+     <com.mdx.framework.widget.MImageView android:id="@+id/image" android:layout_width="@dimen/j106dp" android:layout_height="@dimen/j106dp" android:gravity="center" android:scaleType="centerCrop" android:src="@drawable/default_df_img_load" />
+     <View android:id="@+id/maxview" android:layout_width="@dimen/j106dp" android:layout_height="@dimen/j106dp" android:background="#22000000" android:gravity="center" />
+     <TextView android:id="@+id/tv" android:layout_width="@dimen/j106dp" android:layout_height="@dimen/j106dp" android:background="#22000000" android:gravity="center" />
+     <CheckBox android:id="@+id/checkbox" android:layout_width="@dimen/j36dp" android:layout_height="@dimen/j36dp" android:layout_marginLeft="@dimen/j65dp" android:layout_marginTop="@dimen/j65dp" android:background="@drawable/default_photo_sel" android:button="@null" android:gravity="center" />
+</RelativeLayout>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="F"
+            type="com.mdx.framework.autofit.AutoFit" />
+
+        <variable
+            name="P"
+            type="com.mdx.framework.autofit.commons.AutoParams" />
+
+    </data>
+
+    <com.mdx.framework.autofit.layout.FitLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:orientation="vertical"
+        app:loadApi='@{F.setAda(@id/list,@layout/default_selphoto_item_dir_select,P["directs"])}'
+        app:saveApi=''
+        app:updateApi=''>
+
+        <com.mdx.framework.widget.pagerecycleview.MRecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="300dip"
+            android:background="#fff"
+            android:orientation="vertical"
+            app:column="1">
+
+
+        </com.mdx.framework.widget.pagerecycleview.MRecyclerView>
+    </com.mdx.framework.autofit.layout.FitLinearLayout>
+</layout>

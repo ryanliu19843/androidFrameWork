@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Base
+    TempPath="diedie"
+    BaseUri="http://192.168.1.183"
+    AppId="appid"
+    UseSdcard="true"
+    UpdateUri="http://app.udows.com/mobile?methodno=MUpdate" >>
+    <!--page                  分页参数名    
+        pagesize              每页数量参数名   
+        MaxImageSize          最大图片缓存   
+        MaxFileSize  		     最大文件缓存  
+        MaxDataSize           最大接口缓存空间  
+        WebServiceNamespace   WebService的命名空间名称   
+        source 				  来源   0是测试 1是正式
+        WebServiceUrl         WebService接口的 url-->
+    <param name="page">page</param>
+    
+    
+    <param name="ErrorUpdateUrl">http://app.udows.com/version/mobile?methodno=MUpdateError</param>
+    
+    <param name="pagesize">limit</param>
+    <param name="pagesizenum">10</param>
+    <param name="source">0</param>
+    
+    <param name="MaxImageSize">0</param>
+    <param name="MaxDataSize">0</param>
+    <param name="MaxFileSize">0</param>
+    <param name="MaxVoidSize">0</param>
+    
+    <param name="id">value</param>
+    <param name="ApisFactory">com.udows.zg.proto.ApisFactory</param>
+    
+    <!-- webservicenamespace -->
+    <param name="WebServiceNamespace">value</param>
+    
+     <!-- WebServiceUrl -->
+    <param name="WebServiceUrl">value</param>
+
+    <param name="DefaultFragment"></param>
+    <param name="DefaultXml"></param>
+
+    
+    <param name="DataTypePjson">com.example.newproduct.fragment.FrameActivity</param>
+
+    <URL name="testurl">ssssssss</URL>
+</Base>

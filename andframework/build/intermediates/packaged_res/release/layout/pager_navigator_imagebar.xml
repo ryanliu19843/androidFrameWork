@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+
+    
+
+                 
+                    
+                                                       
+
+                 
+                    
+                                                                  
+
+                 
+                       
+                                                           
+
+
+                                                               
+           
+
+    <LinearLayout
+        android:id="@+id/navitem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" android:tag="layout/pager_navigator_imagebar_0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <com.mdx.framework.widget.MImageView
+            android:id="@+id/title_img"
+            android:layout_width="@dimen/nav_imgsize"
+            android:layout_height="@dimen/nav_imgsize" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="binding_1"    
+            android:textColor="@drawable/nav_txt_color"
+            android:textSize="@dimen/nav_txt_size" />
+
+    </LinearLayout>
+         

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+     File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, softwarewindowDisablePreview
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="actparent" parent="Theme.AppCompat.Light">
+        <item name="alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert.Self</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.Dialog.Alert.Self" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/A</item>
+    </style>
+
+    <style name="act" parent="actparent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">@color/statusBarcolor</item>
+        <item name="colorPrimaryDark">@color/statusBarcolorDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="actNS" parent="actparent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">@color/statusBarcolor</item>
+        <item name="colorPrimaryDark">@color/statusBarcolorDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="actNNS" parent="actparent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimary">@color/statusBarcolor</item>
+        <item name="colorPrimaryDark">@color/statusBarcolorDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="transparentact" parent="act">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="transparentactNS" parent="actNS">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="transparentactNNS" parent="actNNS">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <!-- 有标题 -->
+    <style name="TitleAction">
+        <item name="android:background">@color/A</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+    </style>
+
+    <style name="TitleStatus">
+        <item name="android:background">@color/A</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="TitleNavigation">
+        <item name="android:background">@color/A</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <!-- 无标题 -->
+    <style name="NoTitleAction">
+        <item name="android:background">@color/A</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+    </style>
+
+    <style name="NoTitleStatus">
+        <item name="android:background">@color/A</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="NoTitleNavigation">
+        <item name="android:background">@color/A</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <!-- 透明标题 -->
+    <style name="TransAction">
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+    </style>
+
+    <style name="TransStatus">
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="TransNavigation">
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <!-- actionbar back -->
+    <style name="actionbarback">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/default_bt_background</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/bt_back_n</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">7dp</item>
+    </style>
+
+    <style name="actionbartitle">
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="photoShowAction">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/default_bt_background</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/bt_ps_back_n</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">7dp</item>
+    </style>
+
+    <dimen name="actionbar_height">44dip</dimen>
+</resources>
+

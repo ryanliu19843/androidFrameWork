@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="F"
+            type="com.mdx.framework.autofit.AutoFit" />
+
+        <variable
+            name="P"
+            type="com.mdx.framework.autofit.commons.AutoParams" />
+
+        <variable
+            name="item"
+            type="com.mdx.framework.widget.selectphotos.utils.PhotosUtil.Folder" />
+
+    </data>
+
+    <FrameLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="58dip"
+        android:onClick='@{(v)->F.setParams("SelectPhoto",@layout/default_selphoto_frg_select_photo,"folder",item).close()}'
+        android:orientation="horizontal">
+
+        <com.mdx.framework.widget.MImageView
+            android:id="@+id/iv_dir"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="4dip"
+            android:scaleType="centerCrop"
+            app:obj='@{"file:"+item.firstImagePath}' />
+
+        <TextView
+            android:id="@+id/tv_dirname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="58dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dip"
+            android:text='@{item.name+"("+(item.images.size()-1)+")"}' />
+    </FrameLayout>
+
+
+</layout>

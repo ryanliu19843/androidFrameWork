@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+     <style name="fade_animation">
+          <item name="android:windowEnterAnimation">@anim/swipedismiss_popup_show</item>
+          <item name="android:windowExitAnimation">@anim/swipedismiss_popup_hide</item>
+     </style>
+</resources>
+
+
+

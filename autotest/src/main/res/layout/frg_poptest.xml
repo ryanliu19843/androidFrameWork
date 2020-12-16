@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="F"
+            type="com.mdx.framework.autofit.AutoFit" />
+
+        <variable
+            name="img"
+            type="MImageView" />
+
+        <variable
+            name="P"
+            type="com.mdx.framework.autofit.commons.AutoParams" />
+
+        <variable
+            name="item"
+            type="String" />
+
+        <import type="com.mdx.framework.widget.MImageView" />
+
+        <import type="com.example.autotest.Util" />
+
+        <import type="android.widget.SeekBar" />
+
+        <import type="android.graphics.PorterDuff.Mode" />
+    </data>
+
+    <com.mdx.framework.autofit.layout.FitRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="弹窗测试"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/j40dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:onClick='@{(v)-&gt;F.put("#item",F.V(@id/url)).pop(v,@layout/pop_menu)}'
+                android:padding="0dp"
+                android:text="弹出POP" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/j40dp"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:onClick='@{(v)-&gt;F.put("#item",F.V(@id/url)).dialog(@layout/pop_menu)}'
+                android:padding="0dp"
+                android:text="dialog" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/j40dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentRight="true"
+                android:onClick='@{(v)-&gt;F.put("#item",F.V(@id/url)).pop(v,@layout/pop_menu)}'
+                android:padding="0dp"
+                android:text="弹出POP" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/url"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="随便填点什么吧"
+                    android:text='@{item}' />
+
+                <Button
+                    android:id="@+id/setgif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/j40dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:onClick='@{(v)-&gt;F.put("#item",F.V(@id/url)).pop(v,@layout/pop_menu)}'
+                    android:padding="0dp"
+                    android:text="弹出POP" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/j40dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:onClick='@{(v)-&gt;F.put("#item",F.V(@id/url)).dialog(@layout/frg_imgtest)}'
+                    android:padding="0dp"
+                    android:text="复杂弹窗" />
+
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/j40dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:onClick='@{(v)->F.put("#item",F.V(@id/url)).dialog(@layout/pop_menu)}'
+                    android:padding="0dp"
+                    android:text="显示菜单" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/j40dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentRight="true"
+                    android:onClick='@{(v)-&gt;F.put("#item",F.V(@id/url)).dialog("show cale","#item","click ok")}'
+                    android:padding="0dp"
+                    android:text="弹出复杂dialg" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="48dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/j40dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:onClick='@{(v)-&gt;F.put("#item",F.V(@id/url)).pop(v,@layout/pop_menu)}'
+                android:padding="0dp"
+                android:text="弹出POP" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/j40dp"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:onClick='@{(v)-&gt;F.put("#item",F.V(@id/url)).pop(v,@layout/frg_imgtest)}'
+                android:padding="0dp"
+                android:text="复杂pop" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/j40dp"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentRight="true"
+                android:onClick='@{(v)-&gt;F.put("#item",F.V(@id/url)).pop(v,@layout/pop_menu)}'
+                android:padding="0dp"
+                android:text="弹出POP" />
+        </RelativeLayout>
+
+    </com.mdx.framework.autofit.layout.FitRelativeLayout>
+</layout>
+

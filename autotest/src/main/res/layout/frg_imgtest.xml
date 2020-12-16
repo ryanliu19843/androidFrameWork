@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="F"
+            type="com.mdx.framework.autofit.AutoFit" />
+
+        <variable
+            name="img"
+            type="MImageView" />
+
+        <variable
+            name="P"
+            type="com.mdx.framework.autofit.commons.AutoParams" />
+
+        <import type="com.mdx.framework.widget.MImageView" />
+
+        <import type="com.example.autotest.Util" />
+
+        <import type="android.widget.SeekBar" />
+
+        <import type="android.graphics.PorterDuff.Mode" />
+    </data>
+
+    <com.mdx.framework.autofit.layout.FitLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        app:loadApi="@{F.CV(F.bind(&quot;img&quot;,F.findView(@id/gif)),Util.bindImgtest(F))}">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="图片测试"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/gifcontrol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mdx.framework.widget.MImageView
+                android:id="@+id/gif"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="#eee"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                app:obj="@drawable/tylt_bt_gouwu" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/j40dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="@{()-&gt;img.stop(false)}"
+                    android:padding="0dp"
+                    android:text="停止" />
+
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/j40dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="@{()-&gt;img.start()}"
+                    android:padding="0dp"
+                    android:text="开始" />
+
+                <Button
+                    android:id="@+id/pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/j40dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="@{()-&gt;img.pause()}"
+                    android:padding="0dp"
+                    android:text="暂停" />
+
+                <Button
+                    android:id="@+id/setloop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/j40dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:onClick="@{()-&gt;img.setLoopCount(10)}"
+                    android:padding="0dp"
+                    android:text="循环10次" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/url"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请填写地址url file:" />
+
+                    <Button
+                        android:id="@+id/setgif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/j40dp"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:onClick="@{()-&gt;F.isEmpty(F.V(@id/url))?img.setObj(&quot;ASSETS:anim_flag_england.gif&quot;):img.setObj(F.V(@id/url))}"
+                        android:padding="0dp"
+                        android:text="gif" />
+
+                    <Button
+                        android:id="@+id/setpng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/j40dp"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:onClick="@{()-&gt;F.isEmpty(F.V(@id/url))?img.setObj(&quot;ASSETS:tylt_bg_youdoushi_n.png&quot;):img.setObj(F.V(@id/url))}"
+                        android:padding="0dp"
+                        android:text="png" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <CheckBox
+                        android:id="@+id/isci"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()-&gt;((boolean)F.V(@id/isci))?img.setCircle(true):img.setCircle(false)}"
+                        android:text="圆形"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="圆角"
+                        android:textSize="16dp" />
+
+                    <SeekBar
+                        android:id="@+id/seek"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="500"
+                        android:min="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="模糊"
+                        android:textSize="16dp" />
+
+                    <SeekBar
+                        android:id="@+id/blur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="20"
+                        android:min="0" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="变色（可以设置RGB颜色）"
+                    android:textColor="@color/A"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#660000"
+                        android:onClick="@{()-&gt;img.setTocolor(0xff660000)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#000066"
+                        android:onClick="@{()-&gt;img.setTocolor(0xff000066)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#006600"
+                        android:onClick="@{()-&gt;img.setTocolor(0xff006600)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#fff"
+                        android:onClick="@{()-&gt;img.setTocolor(0xffffffff)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#f0f"
+                        android:onClick="@{()-&gt;img.setTocolor(0xffff00ff)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#ff0"
+                        android:onClick="@{()-&gt;img.setTocolor(0xffffff00)}" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/j40dp"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:onClick="@{()-&gt;img.clearTocolor(0)}"
+                        android:padding="0dp"
+                        android:text="清除变色" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="滤镜变色（可以设置RGB颜色）"
+                    android:textColor="@color/A"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#660000"
+                        android:onClick="@{()-&gt;img.setChcolor(0xff660000,Mode.SRC_ATOP)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#000066"
+                        android:onClick="@{()-&gt;img.setChcolor(0xff000066,Mode.SCREEN)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#006600"
+                        android:onClick="@{()-&gt;img.setChcolor(0xff006600,Mode.DST_ATOP)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#fff"
+                        android:onClick="@{()-&gt;img.setChcolor(0xffffffff,Mode.SRC_OVER)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#f0f"
+                        android:onClick="@{()-&gt;img.setChcolor(0xffff00ff,Mode.SRC_OUT)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#ff0"
+                        android:onClick="@{()-&gt;img.setChcolor(0xffffff00,Mode.SRC_IN)}" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/j40dp"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:onClick="@{()-&gt;img.clearTocolor(0)}"
+                        android:padding="0dp"
+                        android:text="清除变色" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="选中颜色"
+                        android:textColor="@color/A"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/issel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()-&gt;((boolean)F.V(@id/issel))?img.setSelected(true):img.setSelected(false)}"
+                        android:text="选中"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#660000"
+                        android:onClick="@{()-&gt;img.setImgToColor(2,0xff660000)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#000066"
+                        android:onClick="@{()-&gt;img.setImgToColor(2,0xff000066)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#006600"
+                        android:onClick="@{()-&gt;img.setImgToColor(2,0xff006600)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#fff"
+                        android:onClick="@{()-&gt;img.setImgToColor(2,0xffffffff)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#f0f"
+                        android:onClick="@{()-&gt;img.setImgToColor(2,0xffff00ff)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#ff0"
+                        android:onClick="@{()-&gt;img.setImgToColor(2,0xffffff00)}" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/j40dp"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:onClick="@{()-&gt;img.clearTocolor(2)}"
+                        android:padding="0dp"
+                        android:text="清除变色" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="按钮（可以设置RGB颜色）"
+                    android:textColor="@color/A"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#660000"
+                        android:onClick="@{()-&gt;img.setImgToColor(1,0x00660000)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#000066"
+                        android:onClick="@{()-&gt;img.setImgToColor(1,0x00000066)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#006600"
+                        android:onClick="@{()-&gt;img.setImgToColor(1,0x00006600)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#fff"
+                        android:onClick="@{()-&gt;img.setImgToColor(1,0x00000000)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#f0f"
+                        android:onClick="@{()-&gt;img.setImgToColor(1,0x00ff00ff)}" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#ff0"
+                        android:onClick="@{()-&gt;img.setImgToColor(1,0x00ffff00)}" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/j40dp"
+                        android:layout_below="@+id/textView"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:onClick="@{()-&gt;img.clearTocolor(0)}"
+                        android:padding="0dp"
+                        android:text="清除变色" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.mdx.framework.autofit.layout.FitLinearLayout>
+</layout>
+

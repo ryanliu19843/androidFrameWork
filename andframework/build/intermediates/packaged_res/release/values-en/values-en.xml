@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="errorname">
+          <item>error1:接口处理方法未定义</item>
+          <item>error2:接口处理错误</item>
+          <item>error3:密码格式不正确</item>
+          <item>error4:密码格式不正确</item>
+     </string-array>
+    <string name="cancle">Cancel</string>
+    <string name="choose_photo">select photos</string>
+    <string name="complete">complete</string>
+    <string name="contentDescription">Description</string>
+    <string name="footer_loading">Loading ....</string>
+    <string name="getphoto_queren">confirmation</string>
+    <string name="getphoto_quxiao">Cancel</string>
+    <string name="getphoto_xuanzhuan">rotation</string>
+    <string name="loading_load">Loading, please wait</string>
+    <string name="photocut_loading">Processing please</string>
+    <string name="prompt_loading">Loading ....</string>
+    <string name="pull_state_a">Release Refresh</string>
+    <string name="pull_state_b">drop-down refresh</string>
+    <string name="pull_state_c">Refreshing</string>
+    <string name="save">Save</string>
+    <string name="save_success">saved successfully</string>
+    <string name="save_unsuccess">Save failed</string>
+    <string name="send">Send</string>
+    <string name="submit">OK</string>
+    <string name="update_download">downloading</string>
+    <string name="update_downloaded">download is complete, click Install</string>
+    <string name="update_downloading">Applications are updating</string>
+    <string name="update_newest">Have the latest version</string>
+    <string name="update_startdownload">Start Update</string>
+    <string name="update_waitfinish">Applications are being updated, please wait for the update to complete</string>
+    <string name="update_willdownload">application coming soon, whether to continue</string>
+</resources>

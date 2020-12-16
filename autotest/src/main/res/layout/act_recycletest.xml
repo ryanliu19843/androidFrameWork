@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+     <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+          <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorPrimary">
+               <Button android:id="@+id/reload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="pull\n load" />
+               <Button android:id="@+id/error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="load\n error" />
+               <Button android:id="@+id/group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="set\n group" />
+               <Button android:id="@+id/clean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="clean\n up" />
+               <Button android:id="@+id/haspage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="next\n page" />
+          </LinearLayout>
+          <com.mdx.framework.widget.pagerecycleview.MFRecyclerView android:id="@+id/recycleview" android:layout_width="match_parent" android:layout_height="match_parent" />
+     </LinearLayout>
+</LinearLayout>
+

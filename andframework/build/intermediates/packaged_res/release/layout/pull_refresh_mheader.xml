@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_header"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/j60dp"
+    android:gravity="center_vertical">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="@dimen/j20dp"
+        android:layout_height="@dimen/j20dp"
+        android:layout_marginLeft="@dimen/j65dp" />
+
+    <View
+        android:id="@+id/array"
+        android:layout_width="@dimen/j20dp"
+        android:layout_height="@dimen/j40dp"
+        android:layout_marginLeft="@dimen/j70dp"
+        android:background="@drawable/pull_refresh_default_indicator_arrow" />
+
+    <TextView
+        android:id="@+id/stateview"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/j40dp"
+        android:layout_marginLeft="@dimen/j140dp"
+        android:textColor="#ff999999"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/timeview"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/j40dp"
+        android:layout_marginLeft="@dimen/j140dp"
+        android:paddingTop="@dimen/j20dp"
+        android:textColor="#ff999999"
+        android:textSize="12sp" />
+</RelativeLayout>
+
