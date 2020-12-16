@@ -1,5 +1,7 @@
 "# androidFrameWork" 
 ## 功能介绍
+整合常用控件，下拉刷新列表，轮播图，图片选择器，图片加载，api加载等
+有效减少代码开发量。
 - MimageView支持(支持加载本地，网络图片，支持gif，支持圆形图片，圆形变，模糊，变色，提取颜色）
 - 支持databinding，使用AuotFit类，支持弹出pop，dialog，自动填充列表功能。
 
