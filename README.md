@@ -72,7 +72,7 @@
 ```Java 
         Fit.listSet(
                 R.id.jklist,   //MFRecyclerView的实例或id
-                ApisFactory.getApiDevices().set(PhoneUtil.username(), PhoneUtil.token()),   //绑定api
+                ApisFactory.getApiDevices().set(PhoneUtil.username(), PhoneUtil.token()),   //绑定api，也开源直接给出list/数组的数据，自动将数据绑定在item上
                 R.layout.item_device);  //项目的layout
 ```
 
